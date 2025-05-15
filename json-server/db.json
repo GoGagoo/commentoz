@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "id": "ecc0",
+      "author": {
+        "name": "Roman Reigns",
+        "avatar": "/images/roman-reigns.webp"
+      },
+      "content": "This is my yard!",
+      "createdAt": "2025-05-09T13:46:56.861Z",
+      "likes": 100,
+      "isLikedByUser": false
+    },
+    {
+      "id": "87c8",
+      "author": {
+        "name": "Jane Doe",
+        "avatar": "/images/jane-doe.webp"
+      },
+      "content": "Hello everyone!",
+      "createdAt": "2025-05-09T13:48:05.343Z",
+      "likes": 0,
+      "isLikedByUser": false
+    },
+    {
+      "id": "c025",
+      "author": {
+        "name": "John Doe",
+        "avatar": "/images/john-doe.webp"
+      },
+      "content": "Yo wassup gang",
+      "createdAt": "2025-05-09T13:48:15.074Z",
+      "likes": 0,
+      "isLikedByUser": false
+    },
+    {
+      "id": "6d4a",
+      "content": "а",
+      "parentId": null,
+      "author": {
+        "name": "John Doe",
+        "avatar": "/images/john-doe.webp"
+      },
+      "createdAt": "2025-05-14T09:38:37.083Z",
+      "likes": 0,
+      "isLikedByUser": false
+    },
+    {
+      "id": "d067",
+      "content": "п",
+      "parentId": null,
+      "author": {
+        "name": "John Doe",
+        "avatar": "/images/john-doe.webp"
+      },
+      "createdAt": "2025-05-15T16:09:42.516Z",
+      "likes": 0,
+      "isLikedByUser": false
+    },
+    {
+      "id": "ee3b",
+      "content": "ц\n",
+      "parentId": "d067",
+      "author": {
+        "name": "John Doe",
+        "avatar": "/images/john-doe.webp"
+      },
+      "createdAt": "2025-05-15T16:09:48.210Z",
+      "likes": 0,
+      "isLikedByUser": false
+    }
+  ]
+}

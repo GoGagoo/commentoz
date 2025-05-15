@@ -1,0 +1,84 @@
+.container_editor_post {
+	margin-block: 10px 20px;
+}
+
+.formatting_btns {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 15px;
+}
+
+%button_base {
+	padding: 8px 15px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-style: solid;
+	border-width: 1px;
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px rgb(128 145 160 / 50%);
+	}
+}
+
+%button_theme_blue {
+	color: #fff;
+	background-color: #0089ff;
+	border-color: #0089ff;
+
+	&:hover {
+		background-color: transparent;
+		color: #0c6fc5;
+	}
+}
+
+%button_theme_blue_active {
+	color: #0089ff;
+	background-color: #fff;
+	border-color: #0089ff;
+
+	&:hover {
+		background-color: #0c6fc5;
+		color: #fff;
+	}
+}
+
+%button_theme_red {
+	color: #fff;
+	background-color: #e70810;
+	border-color: #e70810;
+
+	&:hover {
+		background-color: transparent;
+		color: #9f181c;
+	}
+}
+
+.comment_like_btn {
+	@extend %button_base;
+	@extend %button_theme_blue;
+}
+
+.comment_like_btn_active {
+	@extend %button_base;
+	@extend %button_theme_blue_active;
+}
+
+.comment_reply_btn {
+	@extend %button_base;
+	@extend %button_theme_blue;
+}
+
+.comment_delete_btn {
+	@extend %button_base;
+	@extend %button_theme_red;
+}
+
+.comment_created_at {
+	font-size: 14px;
+	margin-left: auto;
+	color: #0009;
+}

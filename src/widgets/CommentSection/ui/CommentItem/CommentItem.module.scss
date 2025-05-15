@@ -1,0 +1,52 @@
+.comment_container {
+	margin-bottom: 16px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+	transition: all 0.2s ease;
+
+	&:focus-within {
+		border-color: blue;
+	}
+}
+
+.comment_user {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.comment_user_username {
+	font-size: 18px;
+	font-weight: 600;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.comment_user_avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.comment_text {
+	color: #0009;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.replies {
+	margin-left: 24px;
+	border-left: 2px solid #ddd;
+	padding-left: 16px;
+	position: relative;
+	z-index: 2;
+
+	.comment_container {
+		margin-top: 16px;
+	}
+}
