@@ -1,5 +1,5 @@
 {
-  "name": "p5-commentos",
+  "name": "comments-section-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "server": "json-server --watch json-server/db.json --port 3001 --static public",
+    "server": "json-server --watch json-server/db.json --port 3001 --static ./public",
     "lint:styles": "stylelint \"src/**/*.{css,scss}\"",
     "lint:styles:fix": "stylelint \"src/**/*.{css,scss}\" --fix"
   },
@@ -16,10 +16,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
     "@eslint/js": "^9.25.1",
     "@types/dotenv-webpack": "^7.0.8",
+    "@types/js-cookie": "^3.0.6",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.3",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
@@ -50,11 +53,10 @@
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
-    "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.27.1",
     "@reduxjs/toolkit": "^2.7.0",
     "@tanstack/react-virtual": "^3.13.6",
     "axios": "^1.9.0",
+    "js-cookie": "^3.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",

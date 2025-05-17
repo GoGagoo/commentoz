@@ -12,7 +12,8 @@ module.exports = {
       files: ['**/*.module.scss'],
       rules: {
         'selector-class-pattern': null,
-        'scss/percent-placeholder-pattern': null
+        'scss/percent-placeholder-pattern': null,
+        'css-lcurlyexpected': null
       },
     },
   ],

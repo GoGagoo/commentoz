@@ -1,0 +1,19 @@
+@use '@/styles/vars' as *;
+
+.container {
+	background-color: #fff;
+	min-height: 500px;
+	max-width: 671px;
+	margin: 80px auto auto;
+	border-radius: $large-border-radius;
+	box-shadow: 0 30px 60px 0 #02507c26;
+}
+
+.container_inner {
+	padding: 30px;
+}
+
+.container_inner_title {
+	font-size: 28px;
+	font-weight: 600;
+}

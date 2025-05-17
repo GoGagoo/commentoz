@@ -1,6 +1,6 @@
+import { Comments } from '@/pages/Comments/Comments'
 import React from 'react'
-import { CommentSection } from '../pages/CommentSection/CommentSection'
 
-const App: React.FC = () => <CommentSection />
+const App: React.FC = () => <Comments />
 
 export default App
