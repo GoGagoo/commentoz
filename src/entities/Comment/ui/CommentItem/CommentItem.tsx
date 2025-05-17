@@ -25,17 +25,16 @@ export const CommentItem: FC<Props> = ({
 	commentItemWithReply,
 }) => {
 	const commentContainerRef = useRef<HTMLDivElement | null>(null)
-	const isPublicImage = comment.author.avatar.startsWith('/images/')
-	const avatarKey = comment.author.avatar as AvatarKey
+	const isPublicImage = comment?.author?.avatar?.startsWith('/images/')
 
 	const { handleDeleteComment, handleAddComment, handleLikeCommentToggle } =
 		useCommentActions()
 
-	const { id, author, likes, replies, isLiked, createdAt, content } =
-		comment
+	const { id, author, likes, replies, isLiked, createdAt, content } = comment
 
+	const avatarKey = comment?.author?.avatar as AvatarKey
 	const avatarPath = isPublicImage
-		? author.avatar
+		? comment.author.avatar
 		: (avatars[avatarKey] ?? avatars['john-doe.webp'])
 
 	if (isLoading) return <SkeletonComment />
@@ -43,12 +42,10 @@ export const CommentItem: FC<Props> = ({
 	return (
 		<div ref={commentContainerRef} className={s.commentContainer}>
 			<div className={s.commentUser}>
-				<img
-					className={s.commentUserAvatar}
-					src={avatarPath}
-					alt='john-doe'
-				/>
-				<p className={s.commentUserUsername}>{author.name}</p>
+				<img className={s.commentUserAvatar} src={avatarPath} alt='john-doe' />
+				<p className={s.commentUserUsername}>
+					{comment?.author?.name || 'Unknown User'}
+				</p>
 			</div>
 			<span className={s.commentText}>{content}</span>
 			<CommentActions

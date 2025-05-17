@@ -14,11 +14,11 @@ export const commentsApi = baseApi.injectEndpoints({
 			query: (body) => ({
 				url: 'comments',
 				method: 'POST',
-				body: {
+				data: {
 					...body,
 					author: body.author || {
 						name: 'Anon',
-						avatar: '/default-avatar.webp',
+						avatar: 'john-doe.webp',
 					},
 				},
 			}),

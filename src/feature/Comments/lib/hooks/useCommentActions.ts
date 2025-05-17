@@ -20,18 +20,26 @@ export const useCommentActions = () => {
 		parentId?: string,
 		onSuccess?: () => void,
 	) => {
+		const author = {
+			name: 'John Doe',
+			avatar: '@/shared/assets/images/john-doe.webp',
+		}
+
+		if (!content?.trim()) {
+			console.warn('Пустой комментарий — не отправляется')
+			return
+		}
+
 		try {
 			await createComment({
 				content,
 				parentId,
-				author: {
-					name: 'John Doe',
-					avatar: '@/shared/assets/images/john-doe.webp',
-				},
+				author,
 				createdAt: new Date().toISOString(),
 				likes: 0,
 				isLiked: false,
 			}).unwrap()
+
 			onSuccess?.()
 			await refetch()
 		} catch (err) {

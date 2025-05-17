@@ -30,6 +30,7 @@ export const ReplyCommentForm: FC<Props> = ({
 			onClose()
 		} finally {
 			setIsSubmitting(false)
+			onClose()
 		}
 	}
 
