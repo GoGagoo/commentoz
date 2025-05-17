@@ -1,0 +1,83 @@
+@use '@/styles/vars' as *;
+
+.container {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	border-radius: $middle-border-radius;
+	transition: border-color 0.3s ease;
+
+	&:focus-within {
+		border-color: blue;
+	}
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	margin: 20px auto 0 20px;
+	gap: 8px;
+}
+
+.username {
+	font-size: $large-font-size;
+	font-weight: 600;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.user_avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: $half-border-radius;
+	object-fit: cover;
+}
+
+.comment_textarea {
+	width: 570px;
+	border: none;
+	resize: vertical;
+	min-height: 100px;
+	padding: 10px;
+	margin: 20px 20px 0;
+	outline: none;
+
+	&:focus {
+		border-color: #000;
+	}
+}
+
+.divide {
+	margin: 15px 20px;
+	border-top: 1px #ccc solid;
+}
+
+.bottom_container {
+	margin-inline: $margin-form-inline-large;
+	margin-block: $margin-form-block;
+}
+
+.send_comment_btn {
+	padding: $padding;
+	color: #fff;
+	border: none;
+	font-size: $middle-font-size;
+	border-radius: $middle-border-radius;
+	background-color: #0089ff;
+	cursor: pointer;
+	transition: $button-transition;
+
+	&:hover {
+		background-color: #0c6fc5;
+	}
+
+	&:active {
+		background-color: blue;
+	}
+
+	&:disabled {
+		background-color: #0088ff68;
+	}
+}

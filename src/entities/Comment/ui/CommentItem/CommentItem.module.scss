@@ -1,0 +1,56 @@
+@use '@/styles/vars' as *;
+
+.commentContainer {
+	margin-bottom: 16px;
+	background: #fff;
+	border-radius: $middle-border-radius;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+
+	&:focus-within {
+		border-color: blue;
+	}
+}
+
+.commentUser {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	gap: 8px;
+}
+
+.commentUserUsername {
+	font-size: $large-font-size;
+	font-weight: 600;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.commentUserAvatar {
+	width: 40px;
+	height: 40px;
+	border-radius: $large-border-radius;
+	object-fit: cover;
+}
+
+.commentText {
+	color: #0009;
+	font-weight: 400;
+	font-size: $middle-font-size;
+	margin: 15px 0;
+  display: block;
+}
+
+.replies {
+	margin-left: 24px;
+	border-left: 2px solid #ddd;
+	padding-left: 16px;
+	position: relative;
+	z-index: 2;
+
+	.commentContainer {
+		margin-top: $margin-top-small;
+	}
+}

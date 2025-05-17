@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		"typeRoots": ["node_modules/@types"],
 		"moduleResolution": "node",
 		"paths": {
 			"@/*": ["src/*"],
@@ -9,12 +10,18 @@
 		"outDir": "./dist/",
 		"sourceMap": true,
 		"strict": true,
-		"module": "CommonJS",
-		"target": "es5",
+		"module": "ESNext",
+		"target": "ES2022",
 		"jsx": "react",
 		"allowJs": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true
-	}
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "nodenext"
+		}
+	},
+	"include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }

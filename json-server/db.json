@@ -1,0 +1,37 @@
+{
+  "comments": [
+    {
+      "id": "ecc0",
+      "author": {
+        "name": "Roman Reigns",
+        "avatar": "/images/roman-reigns.webp"
+      },
+      "content": "This is my yard!",
+      "createdAt": "2025-05-09T13:46:56.861Z",
+      "likes": 0,
+      "isLiked": false
+    },
+    {
+      "id": "87c8",
+      "author": {
+        "name": "Jane Doe",
+        "avatar": "/images/jane-doe.webp"
+      },
+      "content": "Hello everyone!",
+      "createdAt": "2025-05-09T13:48:05.343Z",
+      "likes": 0,
+      "isLiked": false
+    },
+    {
+      "id": "4d6a",
+      "content": "п",
+      "author": {
+        "name": "John Doe",
+        "avatar": "@/shared/assets/images/john-doe.webp"
+      },
+      "createdAt": "2025-05-17T09:07:40.660Z",
+      "likes": 0,
+      "isLiked": false
+    }
+  ]
+}

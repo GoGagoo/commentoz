@@ -1,0 +1,64 @@
+@use '@/styles/vars' as *;
+
+.editor {
+	background: white;
+	padding: 15px;
+	border-radius: $middle-border-radius;
+	box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+.textarea {
+	width: 550px;
+	border: none;
+	resize: vertical;
+	min-height: 40px;
+	margin-inline: $margin-form-inline-small;
+	padding: 10px 0 0 10px;
+	outline: none;
+}
+
+.send_block {
+	margin-inline: $margin-form-inline-large;
+	margin-block: $margin-form-block;
+}
+
+.send_btn {
+	padding: $padding;
+	color: #fff;
+	margin-top: 15px;
+	border: none;
+	font-size: $middle-font-size;
+	border-radius: $middle-border-radius;
+	background-color: #0089ff;
+	cursor: pointer;
+	transition: $button-transition;
+
+	&:hover {
+		background-color: #0c6fc5;
+	}
+
+	&:active {
+		background-color: blue;
+	}
+
+	&:disabled {
+		background-color: #0088ff68;
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: $container-box-shadow
+	}
+}
+
+.reply_comment {
+	display: flex;
+	align-items: flex-end;
+}
+
+.reply_comment_created_at {
+	margin-bottom: 30px;
+	font-size: $small-font-size;
+	margin-left: auto;
+	color: #0009;
+}
